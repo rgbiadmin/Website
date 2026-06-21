@@ -1,0 +1,23 @@
+<svg width="502" height="233" viewBox="0 0 502 233" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+.bg{fill:#070D1A}
+.silver{fill:#D7DCE2}
+.silverMid{fill:#A9B1BC}
+.muted{fill:#7E8FA6}
+</style>
+</defs>
+
+<rect x="0" y="0" width="502" height="233" class="bg"/>
+<g transform="translate(-98.75,-1.75)">
+
+<text x="350" y="95" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="84" letter-spacing="6" class="silver" font-weight="700">RG</text>
+
+<text x="350" y="142" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="7" class="silverMid" font-weight="500">BUSINESS INTELLIGENCE</text>
+
+<line x1="280" y1="172" x2="420" y2="172" stroke="#C9A227" stroke-width="2"/>
+
+<text x="350" y="205" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3.5" class="muted">ARCHITECTURE &#183; INTELLIGENCE &#183; TRUST</text>
+
+</g>
+</svg>

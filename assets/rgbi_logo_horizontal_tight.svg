@@ -1,0 +1,74 @@
+<svg width="933" height="445" viewBox="0 0 933 445" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+.bg{fill:#070D1A}
+.gold{fill:#C9A227}
+.silver{fill:#D7DCE2}
+.silverMid{fill:#A9B1BC}
+.muted{fill:#7E8FA6}
+</style>
+</defs>
+
+<rect x="0" y="0" width="933" height="445" class="bg"/>
+<g transform="translate(-32,13)">
+
+<!-- MARK, left side -->
+<g transform="translate(230,210)">
+
+<polygon points="0,-180 156,-90 156,90 0,180 -156,90 -156,-90" fill="none" stroke="#A9B1BC" stroke-width="4"/>
+
+<line x1="-140" y1="75" x2="140" y2="75" stroke="#5A6B7D" stroke-width="2"/>
+
+<g>
+<polygon points="-128,51.0 -88,51.0 -88,75 -128,75" fill="#7A828D"/>
+<polygon points="-128,51.0 -114,42.6 -74,42.6 -88,51.0" fill="#9098A4"/>
+<polygon points="-88,51.0 -74,42.6 -74,66.6 -88,75" fill="#5F6772"/>
+<line x1="-128" y1="51.0" x2="-114" y2="42.6" stroke="#FBEFC4" stroke-width="1" opacity="0.5"/>
+<line x1="-88" y1="51.0" x2="-74" y2="42.6" stroke="#FBEFC4" stroke-width="1" opacity="0.5"/>
+
+<polygon points="-78,35.4 -38,35.4 -38,75 -78,75" fill="#8E96A3"/>
+<polygon points="-78,35.4 -64,27.0 -24,27.0 -38,35.4" fill="#A4ACB7"/>
+<polygon points="-38,35.4 -24,27.0 -24,66.6 -38,75" fill="#717A86"/>
+<line x1="-78" y1="35.4" x2="-64" y2="27.0" stroke="#FBEFC4" stroke-width="1" opacity="0.5"/>
+<line x1="-38" y1="35.4" x2="-24" y2="27.0" stroke="#FBEFC4" stroke-width="1" opacity="0.5"/>
+
+<polygon points="-28,9.8 12,9.8 12,75 -28,75" fill="#A9B1BC"/>
+<polygon points="-28,9.8 -14,1.4 26,1.4 12,9.8" fill="#BFC6CF"/>
+<polygon points="12,9.8 26,1.4 26,66.6 12,75" fill="#8C95A0"/>
+<line x1="-28" y1="9.8" x2="-14" y2="1.4" stroke="#FBEFC4" stroke-width="1" opacity="0.5"/>
+<line x1="12" y1="9.8" x2="26" y2="1.4" stroke="#FBEFC4" stroke-width="1" opacity="0.5"/>
+
+<polygon points="22,-32.6 62,-32.6 62,75 22,75" fill="#C7CDD6"/>
+<polygon points="22,-32.6 36,-41.0 76,-41.0 62,-32.6" fill="#D7DCE2"/>
+<polygon points="62,-32.6 76,-41.0 76,66.6 62,75" fill="#A9B1BC"/>
+<line x1="22" y1="-32.6" x2="36" y2="-41.0" stroke="#FBEFC4" stroke-width="1" opacity="0.5"/>
+<line x1="62" y1="-32.6" x2="76" y2="-41.0" stroke="#FBEFC4" stroke-width="1" opacity="0.5"/>
+
+<polygon points="72,-102.3 112,-102.3 112,75 72,75" fill="#C9A227"/>
+<polygon points="72,-102.3 86,-110.7 126,-110.7 112,-102.3" fill="#E0BD52"/>
+<polygon points="112,-102.3 126,-110.7 126,66.6 112,75" fill="#9A7B1A"/>
+<line x1="72" y1="-102.3" x2="86" y2="-110.7" stroke="#FBEFC4" stroke-width="1.2" opacity="0.7"/>
+<line x1="112" y1="-102.3" x2="126" y2="-110.7" stroke="#FBEFC4" stroke-width="1.2" opacity="0.7"/>
+</g>
+
+<polyline points="-1,3.8 42,-32.6 92,-102.3 146.2,-142.5"
+fill="none" stroke="#C9A227" stroke-width="6" stroke-linecap="butt" stroke-linejoin="round"/>
+<g transform="translate(167,-158) rotate(-36.7)">
+<polygon points="0,0 -34,-7.5 -34,7.5" fill="#C9A227"/>
+</g>
+
+</g>
+
+<!-- WORDMARK, right side, vertically centred against the mark -->
+<g transform="translate(480,0)">
+<text x="0" y="195" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="84" letter-spacing="6" class="silver" font-weight="700">RG</text>
+
+<text x="4" y="245" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="7" class="silverMid" font-weight="500">BUSINESS INTELLIGENCE</text>
+
+<line x1="4" y1="280" x2="140" y2="280" stroke="#C9A227" stroke-width="2"/>
+
+<text x="4" y="320" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3.5" class="muted">ARCHITECTURE &#183; INTELLIGENCE &#183; TRUST</text>
+</g>
+
+</g>
+</svg>

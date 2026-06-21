@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies — RGBI</title>
+  <meta name="description" content="RGBI case studies: Transaction Intelligence and Commercial Performance Intelligence — Platinum-tier analytics platforms in production." />
+  <link rel="icon" type="image/svg+xml" href="assets/rgbi_mark_only.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="RGBI Home">
+        <img src="assets/rgbi_logo_horizontal_tight.svg" alt="RGBI — RG Business Intelligence" />
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Page Hero ──────────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Case Studies</span>
+      <h1>Capability in production</h1>
+      <p>
+        Two platforms, two domains, both delivered to RGBI's Platinum governance standard.
+        Presented as generalised capability demonstrations — client confidentiality is a
+        non-negotiable commitment of every RGBI engagement.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Case Study 1: Transaction Intelligence ─────────── -->
+  <section class="section" id="transaction">
+    <div class="container">
+      <div class="case-study">
+
+        <div class="case-study-header">
+          <div>
+            <span class="section-label">Analytics Platform</span>
+            <h2>Transaction Intelligence</h2>
+            <span class="gold-line"></span>
+            <p>
+              A high-volume transactional analytics platform engineered for organisations
+              processing large volumes of discrete events — where near-real-time performance
+              monitoring, anomaly detection, and statistical process control are operational
+              requirements, not reporting enhancements.
+            </p>
+            <p>
+              The platform monitors 1M+ monthly events across multiple performance
+              domains, applying SPC-derived control limits to distinguish genuine process
+              deviation from natural variation. Alerts are statistically grounded —
+              not arbitrary thresholds agreed in a workshop.
+            </p>
+
+            <h3 style="margin-top:1.75rem; margin-bottom:0.75rem;">Applicable sectors</h3>
+            <p style="font-size:0.9rem;">
+              Manufacturing (sensor and event-level production data) ·
+              Payment processors and fintech platforms ·
+              Public transport ticketing systems ·
+              Retail and point-of-sale transaction networks ·
+              Telecommunications (call and data event records) ·
+              Toll and road infrastructure operators ·
+              Utilities (metering and consumption events)
+            </p>
+          </div>
+          <div class="case-study-metrics">
+            <div class="metric-item">
+              <span class="metric-value">1M+</span>
+              <span class="metric-label">Monthly discrete events monitored</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">Near real-time</span>
+              <span class="metric-label">SPC monitoring cadence</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">Multi-domain</span>
+              <span class="metric-label">Performance tracking scope</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">Platinum</span>
+              <span class="metric-label">RGBI governance standard</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study-body">
+
+          <div class="cs-section">
+            <h4>The Problem</h4>
+            <p>
+              Organisations processing high-frequency transactional event streams typically
+              monitor performance through lagged aggregate reports — daily or weekly rollups
+              that obscure intra-period anomalies until they become operational incidents.
+              Threshold-based alerting, where it exists, relies on manually-set limits
+              that do not reflect the process's actual statistical behaviour.
+            </p>
+            <p>
+              The result: genuine performance deviation goes undetected until it accumulates
+              into a pattern that is visible in a standard report — by which point recovery
+              cost has compounded.
+            </p>
+          </div>
+
+          <div class="cs-section">
+            <h4>The Solution</h4>
+            <p>
+              RGBI designed a semantic model with SPC-derived control limits calculated
+              directly from the event stream's statistical distribution. X-bar and
+              individuals control chart logic was implemented in DAX, with UCL and LCL
+              recalculating dynamically as the data window advances.
+            </p>
+            <p>
+              Anomaly detection distinguishes between common-cause variation and assignable
+              causes, flagging only genuine process shifts. The governed measure hierarchy
+              ensures every alert is traceable from source event through calculation
+              logic to the flag presented in the monitoring dashboard.
+            </p>
+          </div>
+
+          <div class="cs-section">
+            <h4>Technical Architecture</h4>
+            <ul>
+              <li>Power BI semantic model with star-schema event fact table</li>
+              <li>DAX SPC measures: mean, sigma, UCL, LCL, violation flags</li>
+              <li>Near-real-time refresh via Azure SQL event staging layer</li>
+              <li>Python ETL pipeline using pyodbc and fast_executemany</li>
+              <li>Multi-domain performance dimensions for cross-domain analysis</li>
+              <li>Role-level security aligned to operational scope boundaries</li>
+              <li>DAMA DMBOK Platinum metadata on all governed measures</li>
+            </ul>
+          </div>
+
+          <div class="cs-section">
+            <h4>Governance Outcomes</h4>
+            <ul>
+              <li>1,000+ governed measures across operational domains</li>
+              <li>Every alert measure carries data owner and steward annotation</li>
+              <li>Computational lineage documented from source to visual</li>
+              <li>SPC methodology documented and peer-reviewed</li>
+              <li>Threshold derivation auditable — no arbitrary limits</li>
+              <li>Model handover with client knowledge transfer programme</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Divider ─────────────────────────────────────────── -->
+  <div style="border-top: 1px solid var(--bg-card);"></div>
+
+  <!-- ── Case Study 2: Commercial Performance Intelligence ── -->
+  <section class="section section--dark" id="commercial">
+    <div class="container">
+      <div class="case-study">
+
+        <div class="case-study-header">
+          <div>
+            <span class="section-label">Commercial Intelligence</span>
+            <h2>Commercial Performance Intelligence</h2>
+            <span class="gold-line"></span>
+            <p>
+              A governed commercial analytics platform for organisations managing
+              order-to-delivery performance, fulfilment accuracy, and KPI governance
+              across multiple business domains. Built for environments where commercial
+              performance data is fragmented across systems and stakeholders demand
+              a single, auditable source of truth.
+            </p>
+            <p>
+              The platform covers 190+ governed measures across 13 commercial domains,
+              providing end-to-end visibility from order receipt through invoice
+              reconciliation — with statistical defensibility at every layer.
+            </p>
+
+            <h3 style="margin-top:1.75rem; margin-bottom:0.75rem;">Applicable sectors</h3>
+            <p style="font-size:0.9rem;">
+              B2B distribution and wholesale ·
+              FMCG manufacturers ·
+              Industrial and equipment distributors ·
+              Logistics and third-party logistics providers ·
+              Retail supply chains
+            </p>
+          </div>
+          <div class="case-study-metrics">
+            <div class="metric-item">
+              <span class="metric-value">190+</span>
+              <span class="metric-label">Governed measures delivered</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">13</span>
+              <span class="metric-label">Commercial domains covered</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">OTIF</span>
+              <span class="metric-label">Fulfilment framework basis</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">Platinum</span>
+              <span class="metric-label">RGBI governance standard</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study-body">
+
+          <div class="cs-section">
+            <h4>The Problem</h4>
+            <p>
+              Commercial organisations typically measure fulfilment performance through
+              surface-level KPIs — on-time delivery rates and fill rates calculated from
+              a single data source — without reconciling against order, invoice, and
+              dispatch records. The result is a metric that feels credible but cannot
+              withstand challenge when a customer disputes performance.
+            </p>
+            <p>
+              Governance is often absent: no agreed business definitions, no documented
+              calculation logic, and no clear ownership. When the analyst who built the
+              report leaves, institutional knowledge leaves with them.
+            </p>
+          </div>
+
+          <div class="cs-section">
+            <h4>The Solution</h4>
+            <p>
+              RGBI designed a governed semantic model covering the full order-to-invoice
+              lifecycle. Order fulfilment timeliness and accuracy — the OTIF framework —
+              was implemented with statistically derived performance bands rather than
+              arbitrary targets. Reconciliation logic ensures that order, dispatch, and
+              invoice data are consistently aligned before any KPI is calculated.
+            </p>
+            <p>
+              A layered computational architecture separates base transaction metrics
+              from domain-level aggregations and executive summary narratives — ensuring
+              that every board-level figure is traceable to a source transaction.
+            </p>
+          </div>
+
+          <div class="cs-section">
+            <h4>Technical Architecture</h4>
+            <ul>
+              <li>Power BI semantic model: order, dispatch, and invoice fact tables</li>
+              <li>4-4-5 fiscal calendar with period-comparison DAX measures</li>
+              <li>OTIF measure suite: timeliness, accuracy, and composite scores</li>
+              <li>Cross-domain bridge table for multi-entity analysis</li>
+              <li>Azure SQL staging layer with Python ETL and Entra ID auth</li>
+              <li>13 commercial display folder domains in governed measure library</li>
+              <li>Executive narrative layer with period-over-period commentary logic</li>
+            </ul>
+          </div>
+
+          <div class="cs-section">
+            <h4>Governance Outcomes</h4>
+            <ul>
+              <li>190+ measures with full DAMA DMBOK Platinum metadata</li>
+              <li>Business definitions agreed and documented per domain</li>
+              <li>Data owner and steward assigned to every governed measure</li>
+              <li>Reconciliation audit trail from order to invoice</li>
+              <li>OTIF methodology peer-reviewed and signed off by client</li>
+              <li>Knowledge transfer programme enabling client team independence</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container" style="text-align:center; max-width:600px; margin:0 auto;">
+      <span class="section-label">Work with RGBI</span>
+      <h2>Similar challenge?</h2>
+      <p style="margin:1rem 0 2rem;">
+        If your environment demands this standard of correctness and governance,
+        RGBI is the engagement to consider.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/rgbi_logo_horizontal_tight.svg" alt="RGBI" />
+          <p>Platinum-tier Power BI semantic modelling and data engineering. Ireland.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#semantic">Semantic Modelling</a></li>
+            <li><a href="services.html#dax">DAX Engineering</a></li>
+            <li><a href="services.html#spc">SPC Frameworks</a></li>
+            <li><a href="services.html#governance">DAMA Governance</a></li>
+            <li><a href="services.html#agentic">Agentic AI Delivery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="methodology.html">Methodology</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn — coming soon">in</a>
+            <a href="#" class="social-link" aria-label="Instagram" title="Instagram — coming soon">ig</a>
+          </div>
+          <p style="margin-top:1rem; font-size:0.8rem; color:var(--text-muted);">
+            <a href="mailto:rayglass@rgbusinessintel.com" style="color:var(--gold);">rayglass@rgbusinessintel.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 RGBI — RG Business Intelligence. Sole trader. Company Registration No. 756151. Ireland.</p>
+        <p>Engineered · Governed · Proven</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
