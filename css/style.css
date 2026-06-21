@@ -175,7 +175,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 
 .nav-logo img {
-  height: 36px;
+  height: 52px;
   width: auto;
 }
 
@@ -948,7 +948,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 
 .footer-brand img {
-  height: 32px;
+  height: 48px;
   width: auto;
   margin-bottom: 1rem;
 }
