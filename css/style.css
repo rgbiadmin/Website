@@ -44,7 +44,7 @@ ul { list-style: none; }
   --radius:     8px;
   --radius-lg:  14px;
   --max-width:  1140px;
-  --nav-h:      72px;
+  --nav-h:      96px;
 }
 
 /* ── Base ───────────────────────────────────────────────────── */
@@ -175,7 +175,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 
 .nav-logo img {
-  height: 52px;
+  height: 80px;
   width: auto;
 }
 
