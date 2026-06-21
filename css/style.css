@@ -439,6 +439,102 @@ strong { color: var(--text-primary); font-weight: 600; }
   gap: 1.5rem;
 }
 
+/* ── F1 Parallel Cards ──────────────────────────────────────── */
+.parallel-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.parallel-card {
+  display: grid;
+  grid-template-columns: 1fr 48px 1fr;
+  align-items: center;
+  gap: 0;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.parallel-card:hover {
+  border-color: var(--gold-dim);
+}
+
+.parallel-col {
+  padding: 1.5rem 2rem;
+}
+
+.parallel-col p {
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.65;
+}
+
+.parallel-col--f1 {
+  background-color: var(--bg-elevated);
+}
+
+.parallel-col--f1 p {
+  color: var(--text-secondary);
+}
+
+.parallel-col--rgbi p {
+  color: var(--text-tertiary);
+}
+
+.parallel-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.parallel-col--f1 .parallel-label {
+  color: var(--text-muted);
+}
+
+.parallel-col--rgbi .parallel-label {
+  color: var(--gold);
+}
+
+.parallel-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--bg-void);
+  border-left: 1px solid var(--bg-card);
+  border-right: 1px solid var(--bg-card);
+}
+
+.parallel-arrow {
+  color: var(--gold);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .parallel-card {
+    grid-template-columns: 1fr;
+  }
+  .parallel-divider {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid var(--bg-card);
+    border-bottom: 1px solid var(--bg-card);
+    padding: 0.5rem;
+    height: auto;
+  }
+  .parallel-arrow {
+    transform: rotate(90deg);
+    display: inline-block;
+  }
+}
+
 /* ── Pillars (home) ─────────────────────────────────────────── */
 .pillar {
   background-color: var(--bg-elevated);
