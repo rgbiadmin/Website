@@ -310,11 +310,19 @@ strong { color: var(--text-primary); font-weight: 600; }
 
 .hero-h1-large {
   font-family: var(--font-serif);
-  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-size: 4.5vw;
   line-height: 1.1;
   color: var(--text-primary);
   margin-bottom: 1.5rem;
-  max-width: 100%;
+  white-space: nowrap;
+  width: 100%;
+}
+
+@media (max-width: 860px) {
+  .hero-h1-large {
+    font-size: clamp(1.8rem, 7vw, 3rem);
+    white-space: normal;
+  }
 }
 
 .hero-content {
