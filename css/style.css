@@ -303,9 +303,8 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 
 .hero-wordmark {
-  height: 72px;
+  height: 140px;
   width: auto;
-  filter: brightness(0) saturate(100%) invert(68%) sepia(73%) saturate(588%) hue-rotate(4deg) brightness(101%);
 }
 
 .hero-h1-large {
